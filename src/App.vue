@@ -5,6 +5,7 @@ import FormVmodelRef from "./components/FormVmodelRef.vue";
 import ComputedOption from "./components/ComputedOption.vue";
 import TailWindTest from "./components/TailWindTest.vue";
 import {ref} from "vue";
+import CompoAPi from "./components/CompoAPi.vue";
 
 const impressionEnDirect = ref("");
 
@@ -16,17 +17,20 @@ const impressionEnDirect = ref("");
     <input type="text" v-model="impressionEnDirect">
     <p>{{impressionEnDirect}}</p>
     <Modifiers/>
-    <div>
-      <p>Let's go testeer avec</p>
-      <Person/>
-      <FormVmodelRef/>
-      <hr>
-    </div>
-    <hr>
-    <div>
-      <ComputedOption/>
-    </div>
   </header>
+  <div>
+    <p>Let's go testeer avec</p>
+    <Person/>
+    <FormVmodelRef/>
+    <hr>
+  </div>
+  <hr>
+  <div>
+    <ComputedOption/>
+  </div>
+
+  <CompoAPi/>
+
 </template>
 
 <style>
